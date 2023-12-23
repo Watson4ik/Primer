@@ -1,0 +1,15 @@
+#include <iostream>
+#include<math.h>
+
+using namespace std;
+
+int main()
+{
+  int x = 10;
+  int P = 4*x;
+  int S = x*x;
+
+  cout << "P=" << P << "\t" <<  "S=" << S << endl;
+  (P>S)? cout << "Больше - периметр": cout << "Больше - Площадь";
+  return 0;
+}
