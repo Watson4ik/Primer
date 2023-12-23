@@ -1,0 +1,17 @@
+#include <iostream>
+#include<math.h>
+using namespace std;
+void volume(float &x)
+{
+  x = (x >= 0) ? 2 * x : -x;
+}
+
+int main()
+{
+  float x;
+  cout << "Введите число" << endl;
+  cin >> x;
+  volume(x);
+  cout << x << endl;
+  return 0;
+}
