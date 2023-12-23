@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+    int a = 15000000;
+    a = (a*10) / 10; // Неверный результат
+    cout << "a = " << a << endl;
+    int b = 15000000;
+    b = (static_cast<double>(b)*10) / 10; // Верный результат
+    cout << "b = " << b << endl;
+    return 0;
+}
