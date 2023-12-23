@@ -1,0 +1,19 @@
+#include<iostream>
+#include<math.h>
+
+using namespace std;
+
+float volume(float x)
+{
+return pow(x,3)-pow(x,2)+x-1;
+}
+
+int main()
+{
+float a, b, c, z;
+cout << "Введите значение а, b, c -" << endl;
+cin >> a >> b >> c;
+z=(volume(2*a)+volume(b+c));
+cout << z << endl;
+return 0;
+}
